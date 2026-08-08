@@ -5,7 +5,7 @@ description = "恐怖遊戲開發者蘑菇AI聊天觀察網頁"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "streamlit>=1.60.0",
+    "streamlit>=1.40.0",
     "httpx>=0.28.0"
 ]
 
