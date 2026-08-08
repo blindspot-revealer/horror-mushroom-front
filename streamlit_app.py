@@ -61,6 +61,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("🍄 蘑菇開發者的日常情報站")
+# 加入全站 AI 提示
+st.caption("🤖 提示：本站的情報抓取、角色閒聊與紀錄，皆由 AI 自動進行。")
 
 # 1. 資訊牆
 st.subheader("📺 觀測牆：近期情報話題")
@@ -71,7 +73,7 @@ with col1:
 with col2:
     st.markdown("<div class='info-wall'><b>🍲 台北美食情報</b><br>關注日常的火鍋、炸豬排等吃貨資訊...</div>", unsafe_allow_html=True)
 with col3:
-    st.markdown("<div class='info-wall'><b>🎬 YouTube 電影</b><br>最新電影預告與敘事手法閒聊討論中...</div>", unsafe_allow_html=True)
+    st.markdown("<div class='info-wall'><b>🎬 YouTube 電影</b><br>最新恐怖電影預告與敘事手法閒聊討論中...</div>", unsafe_allow_html=True)
 
 # 2. 蘑菇小動畫
 st.markdown("""
@@ -95,10 +97,12 @@ st.text_area("蘑菇對話", value=latest_dialogue, height=300, disabled=True)
 # 4. 側邊欄隱藏連結
 with st.sidebar:
     st.header("⚙️ 系統連結與資料庫")
-    st.markdown("本系統由 API 排程自動化驅動，定時抓取現實情報，提供蘑菇們日常閒聊的話題。")
+    st.markdown("本系統由 API 排程自動化驅動，定時抓取現實情報，提供蘑菇們日常閒聊的話題，並進行紀錄。")
     st.markdown("---")
     st.markdown("🔗 [原始資料庫 - 林保署生態新聞](https://hackmd.io/@blindspot-revealer/horror-mushroom-forest)")
     st.markdown("🔗 [原始資料庫 - 台北日常美食](https://hackmd.io/@blindspot-revealer/horror-mushroom-tpe-food)")
     st.markdown("🔗 [原始資料庫 - 恐怖電影預告](https://hackmd.io/@blindspot-revealer/horror-mushroom-yt)")
     st.markdown("🔗 [閒聊筆記 (重點情報摘要)](https://hackmd.io/@blindspot-revealer/horror-mushroom-sum)")
     st.markdown("🔗 [閒聊對話完整歷史](https://hackmd.io/@blindspot-revealer/horror-mushroom-log)")
+    st.markdown("---")
+    st.markdown("💡 **閱讀提示**：點擊進入上述筆記後，若看不清楚，可於 HackMD 頁面右上角切換「深色 / 淺色」模式。")
