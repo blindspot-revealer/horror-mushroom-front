@@ -1,11 +1,12 @@
 [project]
-name = "blank-app-template"
+name = "horror-mushrooms-chat-obs"
 version = "0.1.0"
-description = "A simple Streamlit app template."
+description = "恐怖遊戲開發者蘑菇AI聊天觀察網頁"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "streamlit>=1.60.0",
+    "httpx>=0.28.0"
 ]
 
 [tool.uv]
